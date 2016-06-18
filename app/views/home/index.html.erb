@@ -1,0 +1,6 @@
+<% if current_user %>
+  <div class="text-center">
+    <h1>Welcome, <%=current_user.name %></h1>
+    <h3>You are logged in via: <%= @auth['provider'].capitalize %></h3>
+  </div>
+<% end %>
